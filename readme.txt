@@ -95,10 +95,10 @@ Upgrade if you want to use WP Help in one of these languages: Bulgarian, German,
 * Improvement: better UI for selecting the default document.
 
 = 0.3 =
-* Translation for: French. Squashes a PHP Notice. Add an action hook so people can add their own styles. 
+* Translation for: French. Squashes a PHP Notice. Add an action hook so people can add their own styles.
 
 = 0.2 =
-* Translations for: Bulgarian, German, Spanish, Mexican Spanish, Macedonian, Dutch, Brazilian Portuguese, and Russian. 
+* Translations for: Bulgarian, German, Spanish, Mexican Spanish, Macedonian, Dutch, Brazilian Portuguese, and Russian.
 
 = 0.1 =
 * Initial version
