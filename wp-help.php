@@ -607,9 +607,8 @@ class CWS_WP_Help_Plugin {
 	}
 
 	public function enqueue() {
-		$suffix = defined ('SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		wp_enqueue_style( 'cws-wp-help', plugins_url( "css/wp-help$suffix.css", __FILE__ ), array(), '20120721b' );
-		wp_enqueue_script( 'cws-wp-help', plugins_url( "js/wp-help$suffix.js", __FILE__ ), array( 'jquery', 'jquery-ui-sortable' ), '20120829' );
+		wp_enqueue_style( 'cws-wp-help', plugins_url( "css/wp-help.css", __FILE__ ), array(), '20120721b' );
+		wp_enqueue_script( 'cws-wp-help', plugins_url( "js/wp-help.js", __FILE__ ), array( 'jquery', 'jquery-ui-sortable' ), '20130111' );
 		do_action( 'cws_wp_help_load' ); // Use this to enqueue your own styles for things like shortcodes.
 	}
 
@@ -633,7 +632,8 @@ class CWS_WP_Help_Plugin {
 	private function get_help_topics_html( $with_sort_handles = false ) {
 		if ( $with_sort_handles )
 			$this->filter_wp_list_pages = true;
-		$output = trim( wp_list_pages( array( 'post_type' => self::POST_TYPE, 'hierarchical' => true, 'echo' => false, 'title_li' => '' ) ) );
+		$defaults = array( 'post_type' => self::POST_TYPE, 'hierarchical' => true, 'echo' => false, 'title_li' => '' );
+		$output = trim( wp_list_pages( apply_filters( 'cws_wp_help_list_pages', $defaults ) ) );
 		$this->filter_wp_list_pages = false;
 		return $output;
 	}
