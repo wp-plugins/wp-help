@@ -1,4 +1,7 @@
 === WP Help ===
+
+[![Build Status](https://travis-ci.org/markjaquith/wp-help.png?branch=master)](https://travis-ci.org/markjaquith/wp-help)  
+
 Contributors: markjaquith  
 Donate link: http://txfx.net/wordpress-plugins/donate  
 Tags: help, documentation, client sites, clients, docs  
@@ -83,7 +86,7 @@ Upgrade if you want to use WP Help in one of these languages: Bulgarian, German,
 == Changelog ==
 = 1.3 =
 * Make the `wp_list_pages()` call filterable.
-* Added a Serbian translation.
+* Added Serbian and Turkish translations.
 
 = 1.2 =
 * New or updated translations for Gujarati, Norwegian, and Brazilian Portuguese.

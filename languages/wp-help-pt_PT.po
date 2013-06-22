@@ -1,4 +1,4 @@
-# Translation of WP Help in Serbian
+# Translation of WP Help in Portuguese (Portugal)
 # This file is distributed under the same license as the WP Help package.
 msgid ""
 msgstr ""
@@ -6,255 +6,255 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: WP Help\n"
 
 #: wp-help.php:273
 msgid "Parent:"
-msgstr "Родитељ:"
+msgstr "Pai:"
 
 #: templates/list-documents.php:7
 msgctxt "Button with limited space"
 msgid "Settings"
-msgstr "Подешавања"
+msgstr "Opções"
 
 #: templates/list-documents.php:8
 msgctxt "Button with limited space"
 msgid "Add New"
-msgstr "Додај ново"
+msgstr "Novo"
 
 #: templates/list-documents.php:8 wp-help.php:268
 msgctxt "verb. Button with limited space"
 msgid "Manage"
-msgstr "Управљај"
+msgstr "Gerir"
 
 #: templates/list-documents.php:16
 msgid "There are no help documents."
-msgstr "Нема докумената помоћи."
+msgstr "Não existem documentos de ajuda."
 
 #: templates/list-documents.php:18
 msgid "There are no help documents yet."
-msgstr "Још увек нема докумената помоћи."
+msgstr "Ainda não existem documentos de ajuda."
 
 #: templates/list-documents.php:36
 msgid "edit"
-msgstr "уреди"
+msgstr "editar"
 
 #: templates/list-documents.php:39
 msgid "The requested help document could not be found."
-msgstr "Захтевани документ помоћи није могао бити пронађен."
+msgstr "O documento solicitado não foi encontrado."
 
 #: templates/settings.php:7
 msgid "WP Help Settings"
-msgstr "Подешавања за WP Help"
+msgstr "Opções WP Help"
 
 #: templates/settings.php:9
 msgid "Headlines"
-msgstr "Наслови"
+msgstr "Cabeçalhos"
 
 #: templates/settings.php:11
 msgid "The main WP Help headline and document listing headline are directly editable."
-msgstr "Главни наслов за WP Help и наслов списка документа су директно измењиви."
+msgstr "Tanto o cabeçalho principal, como os cabeçalhos de listas de documentos são editáveis directamente."
 
 #: templates/settings.php:13
 msgid "Menu Location"
-msgstr "Место у изборнику"
+msgstr "Sítio do menu"
 
 #: templates/settings.php:15
 msgid "Display the help documents menu item:"
-msgstr "Прикажи ставку изборника о документима помоћи:"
+msgstr "Mostrar o item de menu dos documentos de ajuda:"
 
 #: templates/settings.php:17
 msgid "as a Dashboard submenu"
-msgstr "као подизборник контролне табле"
+msgstr "como um submenu do painel"
 
 #: templates/settings.php:18
 msgid "above the Dashboard menu"
-msgstr "изнад изборника контролне табле"
+msgstr "no topo dos menus do painel"
 
 #: templates/settings.php:19
 msgid "below the Dashboard menu"
-msgstr "испод изборника контролне табле"
+msgstr "no fim dos menus do painel"
 
 #: templates/settings.php:20
 msgid "at the bottom"
-msgstr "на дну"
+msgstr "no fundo"
 
 #: templates/settings.php:23
 msgctxt "noun, h3 heading about synchronization"
 msgid "Sync Source"
-msgstr "Извор усклађивања"
+msgstr "Fonte da sincronização"
 
 #: templates/settings.php:25
 msgid "To treat this install as a source, use this secret URL:"
-msgstr "Да бисте се односили ка овој инсталацији као извору, користите овај тајни URL:"
+msgstr "Para usar esta instalação como sendo a fonte, use este URL secreto:"
 
 #: templates/settings.php:27
 msgid "Sync Pull"
-msgstr "Повлачење усклађивања"
+msgstr "Puxar sincronizações"
 
 #: templates/settings.php:29
 msgid "Pull in help documents from this WP Help secret URL:"
-msgstr "Повлачите документе помоћи из овог тајног URLа WP Help-а :"
+msgstr "Puxar os documentos de ajuda deste URL screto de WP Help:"
 
 #: templates/settings.php:31
 msgid "Note:"
-msgstr "Напомена:"
+msgstr "Nota:"
 
 #: templates/settings.php:33
 msgid "Sync pull refreshes automatically once a day."
-msgstr "Повлачење усклађивања се освежава једном дневно."
+msgstr "A sincronização acontece automáticamente, uma vez poer dia."
 
 #: templates/settings.php:34
 msgid "You can manually refresh by saving the setting again."
-msgstr "Можете освежити ручно поновним чувањем подешавања."
+msgstr "Pode refrescar manualmente, guardando a opção novamente."
 
 #: templates/settings.php:35
 msgid "Synced documents cannot be modified locally while syncing is still enabled."
-msgstr "Усклађени документи не могу бити локално измењени док је усклађивање омогућено."
+msgstr "Documentos sincronizados não podem ser modificados localmente, enquanto a sincronização estiver activa."
 
 #: templates/settings.php:38
 msgid "Save Changes"
-msgstr "Сачувај измене"
+msgstr "Guardar alterações"
 
 #: templates/settings.php:38
 msgid "Cancel"
-msgstr "Одустани"
+msgstr "Cancelar"
 
 #: wp-help.php:108
 msgctxt "post type label"
 msgid "Publishing Help"
-msgstr "Помоћ за објављивање"
+msgstr "Documentos de ajuda"
 
 #: wp-help.php:125
 msgid "Help Documents"
-msgstr "Документи помоћи"
+msgstr "Documentos de ajuda"
 
 #: wp-help.php:126
 msgid "Help Document"
-msgstr "Документ помоћи"
+msgstr "Documento de ajuda"
 
 #: wp-help.php:127
 msgid "Add New Help Document"
-msgstr "Додај нови документ помоћи"
+msgstr "Novo documento de ajuda"
 
 #: wp-help.php:128
 msgid "Edit Help Document"
-msgstr "Уреди документ помоћи"
+msgstr "Editar documento de ajuda"
 
 #: wp-help.php:129
 msgid "New Help Document"
-msgstr "Нови документ помоћи"
+msgstr "Novo documento de ajuda"
 
 #: wp-help.php:130
 msgid "View Help Document"
-msgstr "Види документ помоћи"
+msgstr "Ver documento de ajuda"
 
 #: wp-help.php:131
 msgid "Search Documents"
-msgstr "Претражи документе"
+msgstr "Pesquisar documentos"
 
 #: wp-help.php:132
 msgid "No Help Documents Found"
-msgstr "Нема пронађених докумената помоћи"
+msgstr "Nenhum documento de ajuda encontrado"
 
 #: wp-help.php:133
 msgid "No Help Documents found in Trash"
-msgstr "Нема пронађених докумената помоћи на отпаду"
+msgstr "Nenhum documento de ajuda encontrado no lixo"
 
 #: wp-help.php:134
 msgid "Parent Help Document"
-msgstr "Надређени документ помоћи"
+msgstr " Documento de ajuda superior"
 
 #: wp-help.php:135
 msgctxt "i.e. Add new Help Document"
 msgid "Add New"
-msgstr "Додај нови"
+msgstr "Novo"
 
 #: wp-help.php:136
 msgctxt "i.e. Edit Help Document"
 msgid "Edit"
-msgstr "Уреди"
+msgstr "Editar"
 
 #: wp-help.php:137
 msgctxt "i.e. View Help Document"
 msgid "View"
-msgstr "Види"
+msgstr "Ver"
 
 #: wp-help.php:152
 msgctxt "h2 default title"
 msgid "Publishing Help"
-msgstr "Помоћ за објављивање"
+msgstr "Documentos de ajuda"
 
 #: wp-help.php:153
 msgctxt "h3 default title"
 msgid "Help Topics"
-msgstr "Теме помоћи"
+msgstr "Tópicos de ajuda"
 
 #: wp-help.php:170
 msgid "Donate"
-msgstr "Донирај"
+msgstr "Doar"
 
 #: wp-help.php:246
 msgid "&mdash; Remote document"
-msgstr "&mdash; Удаљени документ"
+msgstr "&mdash; Documento remoto"
 
 #: wp-help.php:481
 msgid "What are you doing? You&#8217;re going to create an infinite loop!"
-msgstr "Шта радите? Направићете бесконачну петљу!"
+msgstr "O que é que estás fazer? Vai criar um loop infinito!"
 
 #: wp-help.php:485
 msgid "That is not a WP Help URL. Make sure you copied it correctly."
-msgstr "Ово није URL WP Help-а. Будите сигурни да сте исправно умножили."
+msgstr "Essa não é uma URL de WP Help. Verifique que a copiou correctamente."
 
 #: wp-help.php:574
 msgid "Set as default help document"
-msgstr "Постави као подразумевани документ помоћи."
+msgstr "Definir como documento de ajuda por omissão"
 
 #: wp-help.php:596
 msgid "Document updated. <a href=\"%s\">View document</a>"
-msgstr "Документ је ажуриран. <a href=\"%s\">Види документ</a>"
+msgstr "Documento actualizado. <a href=\"%s\">Visualizar documento</a>"
 
 #: wp-help.php:597
 msgid "Custom field updated."
-msgstr "Прилагођено поље је ажурирано."
+msgstr "Campo personalizado actualizado."
 
 #: wp-help.php:598
 msgid "Custom field deleted."
-msgstr "Прилагођено поље је обрисано."
+msgstr "Campo personalizado eliminado."
 
 #: wp-help.php:599
 msgid "Document updated."
-msgstr "Документ је ажуриран."
+msgstr "Documento actualizado."
 
 #: wp-help.php:600
 msgid "Document restored to revision from %s"
-msgstr "Документ је врађен на ревизију од %s"
+msgstr "Reposta a revisão %s do documento"
 
 #: wp-help.php:601
 msgid "Document published. <a href=\"%s\">View document</a>"
-msgstr "Документ је објављен. <a href=\"%s\">Види документ</a>"
+msgstr "Documento publicado. <a href=\"%s\">Visualizar documento</a>"
 
 #: wp-help.php:602
 msgid "Document saved."
-msgstr "Документ је сачуван."
+msgstr "Documento guardado."
 
 #: wp-help.php:603
 msgid "Document submitted. <a target=\"_blank\" href=\"%s\">Preview document</a>"
-msgstr "Документ је предат. <a target=\"_blank\" href=\"%s\">Прегледај документ</a>"
+msgstr "Documento submetido. <a target=\"_blank\" href=\"%s\">pré-visualizar documento</a>"
 
 #: wp-help.php:604
 msgid "Document scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview document</a>"
-msgstr "Документ је заказан за: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Прегледај документ</a>"
+msgstr "Documento agendado para: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">pré-visualizar documento</a>"
 
 #: wp-help.php:604
 msgid "M j, Y @ G:i"
-msgstr "j. F Y. у H:i"
+msgstr "j M, Y @ G:i"
 
 #: wp-help.php:605
 msgid "Document draft updated. <a target=\"_blank\" href=\"%s\">Preview document</a>"
-msgstr "Нацрт документа је ажуриран. <a target=\"_blank\" href=\"%s\">Прегледај документ</a>"
+msgstr "Rascunho actualizado. <a target=\"_blank\" href=\"%s\">pré-visualizar documento</a>"
 
 msgid "WP Help"
 msgstr "WP Help"
@@ -263,10 +263,10 @@ msgid "http://txfx.net/wordpress-plugins/wp-help/"
 msgstr "http://txfx.net/wordpress-plugins/wp-help/"
 
 msgid "Administrators can create detailed, hierarchical documentation for the site's authors and editors, viewable in the WordPress admin."
-msgstr "Управници могу да направе детаљну хијерархијску документацију за ауторе веб места и уреднике, која ће бити видљива у управљачком делу Вордпреса."
+msgstr "Os administradores podem criar documentação hierárquica e detalhada para os editores e autores de um site, no próprio painel desse site."
 
 msgid "Mark Jaquith"
-msgstr "Марк Џејквид"
+msgstr "Mark Jaquith"
 
 msgid "http://coveredwebservices.com/"
 msgstr "http://coveredwebservices.com/"
