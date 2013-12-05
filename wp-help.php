@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Help
 Description: Administrators can create detailed, hierarchical documentation for the site's authors and editors, viewable in the WordPress admin.
-Version: 1.2
+Version: 1.3
 License: GPL
 Plugin URI: http://txfx.net/wordpress-plugins/wp-help/
 Author: Mark Jaquith
@@ -555,10 +555,12 @@ class CWS_WP_Help_Plugin extends WP_Stack_Plugin {
 	}
 
 	public function admin_menu() {
-		if ( 'dashboard-submenu' != $this->get_option( 'menu_location' ) )
-			$hook = add_menu_page( $this->get_option( 'h2' ), $this->get_option( 'h2' ), $this->get_cap( 'read_posts' ), self::MENU_SLUG, array( $this, 'render_listing_page' ), plugin_dir_url( __FILE__ ) . 'images/icon-16.png' );
-		else
+		if ( 'dashboard-submenu' != $this->get_option( 'menu_location' ) ) {
+			$icon = version_compare( $GLOBALS['wp_version'], '3.8-RC1', '>=' ) ? 'dashicons-editor-help' : plugin_dir_url( __FILE__ ) . 'images/icon-16.png';
+			$hook = add_menu_page( $this->get_option( 'h2' ), $this->get_option( 'h2' ), $this->get_cap( 'read_posts' ), self::MENU_SLUG, array( $this, 'render_listing_page' ), $icon );
+		} else {
 			$hook = add_dashboard_page( $this->get_option( 'h2' ), $this->get_option( 'h2' ), $this->get_cap( 'read_posts' ), self::MENU_SLUG, array( $this, 'render_listing_page' ) );
+		}
 		$this->hook( "load-{$hook}", 'enqueue' );
 	}
 
@@ -615,10 +617,14 @@ class CWS_WP_Help_Plugin extends WP_Stack_Plugin {
 		exit();
 	}
 
+	public function admin_page_url() {
+		return admin_url( $this->admin_base . '?page=' . self::MENU_SLUG );
+	}
+
 	public function page_link( $link, $post ) {
 		$post = get_post( $post );
 		if ( self::POST_TYPE == $post->post_type )
-			return admin_url( $this->admin_base . '?page=' . self::MENU_SLUG . '&document=' . absint( $post->ID ) );
+			return $this->admin_page_url() . '&document=' . absint( $post->ID );
 		else
 			return $link;
 	}
@@ -644,7 +650,7 @@ class CWS_WP_Help_Plugin extends WP_Stack_Plugin {
 			</style>
 		<?php endif; ?>
 <div class="wrap">
-	<?php screen_icon(self::POST_TYPE); ?><div id="cws-wp-help-h2-label-wrap"><input type="text" id="cws-wp-help-h2-label" value="<?php echo esc_attr( $this->get_option( 'h2' ) ); ?>" /></div><img id="cws-wp-help-loading" src="<?php echo plugins_url( '/images/loading.gif', __FILE__ ); ?>" style="display:none;" /><h2><?php echo esc_html( $this->get_option( 'h2' ) ); ?></h2>
+	<?php screen_icon(self::POST_TYPE); ?><div id="cws-wp-help-h2-label-wrap"><input type="text" id="cws-wp-help-h2-label" value="<?php echo esc_attr( $this->get_option( 'h2' ) ); ?>" /></div><span id="cws-wp-help-loading" class="spinner"></span><h2><?php echo esc_html( $this->get_option( 'h2' ) ); ?></h2>
 	<?php include( dirname( __FILE__ ) . '/templates/list-documents.php' ); ?>
 </div>
 <?php
